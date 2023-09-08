@@ -1,0 +1,52 @@
+package tut01;
+
+public class BooleanEx {
+
+	public static void main(String[] args) {
+		// 논리연산자에서 0=>false(거짓) , 0을 제외한 양수(주로 1)는 => true 
+		
+		// 기본타입의 초기값 설정 해두는 편이 좋다.
+		byte a; 
+		int i = 0;
+		double d = 0.0;
+		boolean b = false;
+		boolean c = true;
+		String str = "";
+		
+		// 참이면 통과, 아니면 재평가
+		
+		// equals() : String 값
+		// 그 외 비교해야할 때는 ==
+		
+		if(b) //(b==true)라고 써도 되지만 true는 간략히 생략가능
+			System.out.println("통과");
+		else 
+			System.out.println("재평가");
+		// 삼항연산자로 작성하는게 간략하기 때문에 더 좋다.
+		// (조건) ? "참일때 출력문" : "거짓일 때 출력문" ;
+		
+		String s = (b) ? "통과" : "재평가";
+		System.out.println(s);
+
+		//조건이 참이면 1 아니면 0을 출력하시오
+		int j = (b) ? 1 : 0;
+		System.out.println(j);
+		
+		//조건이 참이면 1.0 아니면 0.0을 출력하시오
+		double k = (c) ? 1.0 : 0.0 ;
+		System.out.println(k);
+		// 조건에 실수형을 입력하면 에러가 뜸
+		
+		//조건이 참이면 ture 아니면 false을 출력하시오
+		boolean x = (b) ? c : b ;				
+		System.out.println(x);
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
